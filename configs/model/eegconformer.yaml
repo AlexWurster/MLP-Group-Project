@@ -1,0 +1,33 @@
+# defaults:
+#   - base_model_config
+
+# model_name: eegconformer
+# configs:
+#   model_name_or_path: eegconformer
+#   from_pretrained: False
+#   pretrained_checkpoint: null
+# model_args:
+#   n_chans: 16
+#   n_outputs: 6
+#   n_times: 10000
+#   n_filters_time: 40
+#   att_heads: 10
+#   add_log_softmax: false
+
+
+defaults:
+  - base_model_config
+
+model_name: eegconformer
+configs:
+  model_name_or_path: eegconformer
+  from_pretrained: False
+  pretrained_checkpoint: null
+model_args:
+  n_chans: 16
+  n_outputs: 6
+  n_times: 10000
+  input_window_seconds: 50
+  n_filters_time: 40
+  att_heads: 10
+  add_log_softmax: false

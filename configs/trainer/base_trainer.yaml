@@ -1,0 +1,25 @@
+defaults:
+  - base_trainer_config
+
+name: base_trainer
+# output_dir: "./output"
+
+batch_size: 64
+num_workers: 8
+num_epochs: 300
+loss_fn: cross_entropy
+lr: 2e-05
+save_checkpoint_path: './saved/checkpoints'
+save_preds_path: './saved/preds'
+target_dir: "/home/co-chae/rds/hpc-work/re_extract/home/camwheeler/camerons_datasets/mlp_eeg_data/{split}/targets"
+data_dir: "/home/co-chae/rds/hpc-work/re_extract/home/camwheeler/camerons_datasets/mlp_eeg_data/{split}/data"
+patience: 500
+delta: 0.0001
+
+
+wandb_args:
+  # wandb_project: MLP-KAGGLE-EEG
+  wandb_entity: mlp-gp # clee1997 # change this to group entity
+  project_name: MLP-EEG #-EXPERIMENTS
+  session_name: SESSION-NAME # Description
+  name: NAME

@@ -1,0 +1,8 @@
+# @package _global_
+defaults:
+  - override /model: eegconformer
+  # - override /data: tiny_dataset
+  - override /trainer: base_trainer
+hydra:
+  run:
+    dir: outputs/eegconformer/${now:%Y-%m-%d}/${now:%H-%M-%S}

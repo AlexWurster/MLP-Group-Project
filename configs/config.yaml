@@ -1,0 +1,14 @@
+defaults:
+  - base_config
+  - model: default
+  # - data: tiny_dataset
+  - trainer: base_trainer
+  - override: null
+  - _self_
+
+random_seed: 42
+
+# wandb_project: MLP-KAGGLE-EEG
+# wandb_entity: clee1997 # your wandb username here. 
+
+debug: false

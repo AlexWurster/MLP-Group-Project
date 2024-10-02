@@ -1,0 +1,14 @@
+defaults:
+  - base_model_config
+
+model_name: deep4net
+configs:
+  model_name_or_path: deep4net
+  from_pretrained: False
+  pretrained_checkpoint: null
+model_args:
+  n_chans: 16
+  n_outputs: 6
+  n_times: 10000
+  n_filters_time: 8
+  add_log_softmax: false
